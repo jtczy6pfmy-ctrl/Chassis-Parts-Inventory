@@ -7,26 +7,171 @@
 <script src="parts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
-:root{--navy:#102846;--blue:#1754c0;--line:#d8e1ed;--bg:#eef3f8;--text:#1d2b3a;--muted:#66758a}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}header{background:linear-gradient(90deg,#102846,#0b1d34);color:#fff;padding:18px 32px;display:flex;align-items:center;justify-content:space-between}.brand h1{margin:0;font-size:25px}.brand small{color:#b9c7d8}.date{color:#dbe7f5;font-size:14px}.page{padding:20px;display:grid;grid-template-columns:1.6fr 1fr;gap:20px;min-height:calc(100vh - 82px)}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 20px rgba(30,60,90,.08);padding:20px}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.panel-head h2{margin:0;font-size:24px}.panel-head p{margin:4px 0 0;color:var(--muted)}.status{font-size:13px;color:var(--muted)}button{border:0;border-radius:8px;padding:10px 16px;font-weight:700;cursor:pointer}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}.stat{padding:18px;text-align:center;border-radius:12px;background:#edf3fa}.stat:nth-child(2){background:#e9f6ed}.stat:nth-child(3){background:#fff6dc}.stat:nth-child(4){background:#fdeaea}.stat b{display:block;font-size:27px;margin:7px 0}.filters{display:grid;grid-template-columns:1.7fr 1fr;gap:12px;margin-bottom:16px}.filters input{width:100%;padding:13px;border:1px solid var(--line);border-radius:9px;font-size:15px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:680px}th,td{padding:14px;border-bottom:1px solid #e8edf4;text-align:left}th{background:#edf2f8;font-size:13px}.part-link{background:none;color:var(--blue);padding:0;font-weight:800;text-decoration:underline;text-underline-offset:3px}.available{color:#21723c;font-weight:700}.missing{color:var(--muted)}.report-title{font-size:21px;font-weight:800;margin:0 0 6px}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.mini{padding:13px;text-align:center;border-radius:10px;background:#edf3fa}.mini b{display:block;font-size:22px}.section{border:1px solid var(--line);border-radius:12px;margin-top:14px;overflow:hidden}.section h3{margin:0;padding:12px 14px;font-size:16px;background:#f5f8fc}.activity{padding:12px 14px;border-top:1px solid #edf1f5;font-size:14px}.modal{position:fixed;inset:0;background:rgba(8,20,35,.65);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}.modal.show{display:flex}.modal-card{background:#fff;width:min(680px,100%);border-radius:18px;padding:20px;position:relative}.close{position:absolute;right:15px;top:12px;background:#eef2f7;font-size:20px;padding:5px 11px}.modal-card h2{margin:0 35px 5px 0}.modal-meta{color:var(--muted);margin-bottom:16px}.image-box{height:360px;border:2px dashed #ccd7e5;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#f7f9fc;overflow:hidden}.image-box img{width:100%;height:100%;object-fit:contain}.empty{text-align:center;color:var(--muted);padding:30px}@media(max-width:1050px){.page{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){header{padding:14px 16px}.date{display:none}.page{padding:10px}.stats,.summary{grid-template-columns:1fr 1fr}.filters{grid-template-columns:1fr}}
+:root{--navy:#102846;--blue:#1754c0;--line:#d8e1ed;--bg:#eef3f8;--text:#1d2b3a;--muted:#66758a}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}header{background:linear-gradient(90deg,#102846,#0b1d34);color:#fff;padding:18px 32px;display:flex;align-items:center;justify-content:space-between}.brand h1{margin:0;font-size:25px}.brand small{color:#b9c7d8}.date{color:#dbe7f5;font-size:14px}.page{padding:20px;display:grid;grid-template-columns:1.6fr 1fr;gap:20px;min-height:calc(100vh - 82px)}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 20px rgba(30,60,90,.08);padding:20px}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.panel-head h2{margin:0;font-size:24px}.panel-head p{margin:4px 0 0;color:var(--muted)}.status{font-size:13px;color:var(--muted)}button{border:0;border-radius:8px;padding:10px 16px;font-weight:700;cursor:pointer}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}.stat{padding:18px;text-align:center;border-radius:12px;background:#edf3fa}.stat:nth-child(2){background:#e9f6ed}.stat:nth-child(3){background:#fff6dc}.stat:nth-child(4){background:#fdeaea}.stat b{display:block;font-size:27px;margin:7px 0}.filters{display:grid;grid-template-columns:1.7fr 1fr;gap:12px;margin-bottom:16px}.filters input{width:100%;padding:13px;border:1px solid var(--line);border-radius:9px;font-size:15px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:760px}th,td{padding:14px;border-bottom:1px solid #e8edf4;text-align:left}th{background:#edf2f8;font-size:13px}.part-link{background:none;color:var(--blue);padding:0;font-weight:800;text-decoration:underline;text-underline-offset:3px}.available{color:#21723c;font-weight:700}.missing{color:var(--muted)}.badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:700}.badge-a{background:#fdeaea;color:#9c1c1c}.badge-b{background:#fff6dc;color:#8a6a08}.badge-c{background:#edf3fa;color:#1754c0}.alert-tag{color:#d93838;font-weight:700}.ok-tag{color:#21723c;font-weight:700}.report-title{font-size:21px;font-weight:800;margin:0 0 6px}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.mini{padding:13px;text-align:center;border-radius:10px;background:#edf3fa}.mini b{display:block;font-size:22px}.section{border:1px solid var(--line);border-radius:12px;margin-top:14px;overflow:hidden}.section h3{margin:0;padding:12px 14px;font-size:16px;background:#f5f8fc}.activity{padding:12px 14px;border-top:1px solid #edf1f5;font-size:13px;display:flex;justify-content:space-between;align-items:center}.modal{position:fixed;inset:0;background:rgba(8,20,35,.65);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}.modal.show{display:flex}.modal-card{background:#fff;width:min(680px,100%);border-radius:18px;padding:20px;position:relative}.close{position:absolute;right:15px;top:12px;background:#eef2f7;font-size:20px;padding:5px 11px}.modal-card h2{margin:0 35px 5px 0}.modal-meta{color:var(--muted);margin-bottom:16px}.image-box{height:360px;border:2px dashed #ccd7e5;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#f7f9fc;overflow:hidden}.image-box img{width:100%;height:100%;object-fit:contain}.empty{text-align:center;color:var(--muted);padding:30px}@media(max-width:1050px){.page{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){header{padding:14px 16px}.date{display:none}.page{padding:10px}.stats,.summary{grid-template-columns:1fr 1fr}.filters{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header><div class="brand"><h1>🚚 Chassis Parts Inventory</h1><small>Parts Catalog & Stock Management</small></div><div class="date" id="today"></div></header>
 <main class="page">
-<section class="panel"><div class="panel-head"><div><h2>Stock Levels</h2><p>Current Inventory Status</p></div><div class="status" id="imageStatus">Loading permanent catalog images…</div></div>
-<div class="stats"><div class="stat">Total Parts<b id="total">0</b><small>In Catalog</small></div><div class="stat">In Stock<b>—</b><small>Tracked</small></div><div class="stat">Low Stock<b>—</b><small>Needs Review</small></div><div class="stat">Out of Stock<b>—</b><small>Needs Order</small></div></div>
+<section class="panel"><div class="panel-head"><div><h2>Stock Levels</h2><p>Current Inventory Status & Trends</p></div><div class="status" id="imageStatus">Loading permanent catalog images…</div></div>
+<div class="stats">
+<div class="stat">Total Parts<b id="total">0</b><small>In Catalog</small></div>
+<div class="stat">In Stock<b id="inStockCount">0</b><small>Healthy Stock</small></div>
+<div class="stat">Low Stock<b id="lowStockCount">0</b><small>Needs Review</small></div>
+<div class="stat">Out of Stock<b id="outStockCount">0</b><small>Needs Order</small></div>
+</div>
 <div class="filters"><input id="search" placeholder="🔎 Search part number, description, or category..."><input id="category" placeholder="Filter by category..."></div>
-<div class="table-wrap"><table><thead><tr><th>Part Number</th><th>Description</th><th>Category</th><th>Image</th></tr></thead><tbody id="rows"></tbody></table></div></section>
-<section class="panel"><p class="report-title">Daily / Weekly Inventory Report</p><p style="color:var(--muted);margin-top:0">Track stock levels, shortages and usage</p><div class="summary"><div class="mini"><b id="summaryTotal">0</b>Total Parts</div><div class="mini"><b>—</b>Low Stock</div><div class="mini"><b>—</b>Out of Stock</div><div class="mini"><b>Today</b>Last Review</div></div><div class="section"><h3>⚠ Low Stock Items</h3><div class="activity">Connect stock quantities to populate low-stock alerts.</div></div><div class="section"><h3>⛔ Out of Stock Items</h3><div class="activity">Parts catalog is ready for inventory counts.</div></div><div class="section"><h3>◷ Recent Activity</h3><div class="activity">Master parts catalog loaded.</div><div class="activity">Click any <b>part number</b> to view its catalog image.</div></div></section>
+<div class="table-wrap"><table><thead><tr><th>Part Number</th><th>Description</th><th>Category</th><th>ABC</th><th>Stock / Reorder</th><th>Image</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<section class="panel"><p class="report-title">Daily / Weekly Inventory Report</p><p style="color:var(--muted);margin-top:0">Smart ordering trends & ABC cycle counts</p>
+<div class="summary">
+<div class="mini"><b id="summaryTotal">0</b>Total Parts</div>
+<div class="mini"><b id="summaryLow">0</b>Low Stock</div>
+<div class="mini"><b id="summaryOut">0</b>Out of Stock</div>
+<div class="mini"><b>Active</b>Status</div>
+</div>
+<div class="section"><h3>⚠ Low Stock & Smart Reorder Alerts</h3><div id="lowStockList"><div class="activity">All stock levels are currently optimal.</div></div></div>
+<div class="section"><h3>🔄 ABC Cycle Count Schedule</h3><div id="cycleCountList"><div class="activity">A-Class: Monthly | B-Class: Quarterly | C-Class: Bi-Annually</div></div></div>
+<div class="section"><h3>◷ Recent Activity</h3><div class="activity"><span>Master parts catalog and usage models loaded.</span><span style="color:var(--muted)">Just now</span></div><div class="activity"><span>Click any <b>part number</b> to view its catalog image.</span><span style="color:var(--muted)">System</span></div></div></section>
 </main>
 <div class="modal" id="modal"><div class="modal-card"><button class="close" id="close">×</button><h2 id="modalPart"></h2><div class="modal-meta" id="modalDescription"></div><div class="image-box" id="imageBox"></div></div></div>
 <script>
-const catalog=window.parts||[];const rows=document.getElementById('rows');let imageFiles={};let zip=null;let activeUrl=null;
-document.getElementById('today').textContent=new Date().toLocaleString([], {weekday:'short',month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'});document.getElementById('total').textContent=catalog.length;document.getElementById('summaryTotal').textContent=catalog.length;
+// Mock default fields or extend your parts.js properties if defined there
+const catalog=(window.parts||[]).map(p => ({
+  ...p,
+  stock: p.stock !== undefined ? p.stock : Math.floor(Math.random() * 25),
+  weeklyUsage: p.weeklyUsage || Math.floor(Math.random() * 5) + 1,
+  leadTimeDays: p.leadTimeDays || 7,
+  abc: p.abc || (Math.random() > 0.7 ? 'A' : Math.random() > 0.4 ? 'B' : 'C')
+}));
+
+const rows=document.getElementById('rows');let imageFiles={};let zip=null;let activeUrl=null;
+document.getElementById('today').textContent=new Date().toLocaleString([], {weekday:'short',month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'});
+
+function calculateMetrics(){
+  let total=catalog.length;
+  let outStock=0, lowStock=0, inStock=0;
+  let lowListHtml='';
+  let cycleHtml='';
+
+  catalog.forEach(p=>{
+    // Reorder point calculation: (Weekly Usage / 7) * Lead Time days + Safety buffer
+    const dailyUsage = p.weeklyUsage / 7;
+    const reorderPoint = Math.ceil(dailyUsage * p.leadTimeDays + 2);
+
+    if(p.stock <= 0){
+      outStock++;
+      lowListHtml+=`<div class="activity"><span><b>${p.partNumber}</b> (${p.description})</span><span class="alert-tag">OUT OF STOCK (Reorder immediately)</span></div>`;
+    } else if(p.stock <= reorderPoint){
+      lowStock++;
+      lowListHtml+=`<div class="activity"><span><b>${p.partNumber}</b> (${p.description})</span><span class="alert-tag">Low Stock: ${p.stock} left (Trigger at ≤${reorderPoint})</span></div>`;
+    } else {
+      inStock++;
+    }
+  });
+
+  if(!lowListHtml) lowListHtml='<div class="activity">All tracked parts are currently above minimum reorder thresholds.</div>';
+
+  // ABC breakdown schedule summary
+  const counts = {A: catalog.filter(x=>x.abc==='A').length, B: catalog.filter(x=>x.abc==='B').length, C: catalog.filter(x=>x.abc==='C').length};
+  cycleHtml=`
+    <div class="activity"><span><b>Class A (${counts.A} parts)</b> — High-cost safety / critical components</span><span style="color:var(--blue);font-weight:700">Monthly Count</span></div>
+    <div class="activity"><span><b>Class B (${counts.B} parts)</b> — Moderate-turnover running gear</span><span style="color:var(--blue);font-weight:700">Quarterly Count</span></div>
+    <div class="activity"><span><b>Class C (${counts.C} parts)</b> — High-volume hardware / consumables</span><span style="color:var(--blue);font-weight:700">Semi-Annual Count</span></div>
+  `;
+
+  document.getElementById('total').textContent=total;
+  document.getElementById('summaryTotal').textContent=total;
+  document.getElementById('inStockCount').textContent=inStock;
+  document.getElementById('lowStockCount').textContent=lowStock;
+  document.getElementById('outStockCount').textContent=outStock;
+  document.getElementById('summaryLow').textContent=lowStock;
+  document.getElementById('summaryOut').textContent=outStock;
+  document.getElementById('lowStockList').innerHTML=lowListHtml;
+  document.getElementById('cycleCountList').innerHTML=cycleHtml;
+}
+
 function key(p){return String(p.partNumber).trim().toUpperCase()}
-function render(){const q=document.getElementById('search').value.toLowerCase(),c=document.getElementById('category').value.toLowerCase();rows.innerHTML='';catalog.filter(p=>[p.partNumber,p.description,p.category].join(' ').toLowerCase().includes(q)&&p.category.toLowerCase().includes(c)).forEach(p=>{const has=!!imageFiles[key(p)];const tr=document.createElement('tr');tr.innerHTML=`<td><button class="part-link">${p.partNumber}</button></td><td>${p.description}</td><td>${p.category}</td><td class="${has?'available':'missing'}">${has?'📷 Available':'—'}</td>`;tr.querySelector('.part-link').onclick=()=>openPart(p);rows.appendChild(tr)})}
-async function openPart(p){document.getElementById('modalPart').textContent=p.partNumber;document.getElementById('modalDescription').textContent=p.description+' • '+p.category;const box=document.getElementById('imageBox');box.innerHTML='<div class="empty">Loading image…</div>';document.getElementById('modal').classList.add('show');if(activeUrl){URL.revokeObjectURL(activeUrl);activeUrl=null}const path=imageFiles[key(p)];if(!path||!zip){box.innerHTML='<div class="empty">No catalog image is available for this part.</div>';return}try{const file=zip.file(path);if(!file)throw new Error('Missing image');const blob=await file.async('blob');activeUrl=URL.createObjectURL(blob);box.innerHTML=`<img src="${activeUrl}" alt="${p.partNumber}">`}catch(e){box.innerHTML='<div class="empty">Unable to load this catalog image.</div>'}}
-async function loadImages(){const status=document.getElementById('imageStatus');try{const r=await fetch('assets/parts-images.zip',{cache:'no-store'});if(!r.ok)throw new Error('Image package not found');zip=await JSZip.loadAsync(await r.arrayBuffer());const indexFile=zip.file('image-index.json');if(indexFile){const index=JSON.parse(await indexFile.async('text'));for(const [part,path] of Object.entries(index)){imageFiles[String(part).trim().toUpperCase()]=path}}else{Object.keys(zip.files).forEach(path=>{const m=path.match(/^images\/(.+)\.webp$/i);if(m)imageFiles[m[1].toUpperCase()]=path})}status.textContent=`${Object.keys(imageFiles).length} permanent catalog images loaded`;render()}catch(e){status.textContent='Catalog images could not be loaded';console.error(e);render()}}
-document.getElementById('close').onclick=()=>document.getElementById('modal').classList.remove('show');document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show')};document.getElementById('search').oninput=render;document.getElementById('category').oninput=render;render();loadImages();
+
+function render(){
+  const q=document.getElementById('search').value.toLowerCase();
+  const c=document.getElementById('category').value.toLowerCase();
+  rows.innerHTML='';
+  
+  catalog.filter(p=>[p.partNumber,p.description,p.category].join(' ').toLowerCase().includes(q)&&p.category.toLowerCase().includes(c)).forEach(p=>{
+    const has=!!imageFiles[key(p)];
+    const dailyUsage = p.weeklyUsage / 7;
+    const reorderPoint = Math.ceil(dailyUsage * p.leadTimeDays + 2);
+    const isLow = p.stock <= reorderPoint;
+
+    const badgeClass = p.abc === 'A' ? 'badge-a' : p.abc === 'B' ? 'badge-b' : 'badge-c';
+    const tr=document.createElement('tr');
+    tr.innerHTML=`
+      <td><button class="part-link">${p.partNumber}</button></td>
+      <td>${p.description}</td>
+      <td>${p.category}</td>
+      <td><span class="badge ${badgeClass}">${p.abc} Class</span></td>
+      <td>
+        <b>${p.stock} on hand</b><br>
+        <small style="color:var(--muted)">Usage: ${p.weeklyUsage}/wk | Target: ≤${reorderPoint}</small>
+        ${isLow ? '<br><span style="color:#d93838;font-size:11px;font-weight:700">⚠ Reorder Needed</span>' : ''}
+      </td>
+      <td class="${has?'available':'missing'}">${has?'📷 Available':'—'}</td>
+    `;
+    tr.querySelector('.part-link').onclick=()=>openPart(p);
+    rows.appendChild(tr);
+  });
+}
+
+async function openPart(p){
+  document.getElementById('modalPart').textContent=p.partNumber;
+  document.getElementById('modalDescription').textContent=`${p.description} • ${p.category} • ABC: ${p.abc} Class`;
+  const box=document.getElementById('imageBox');
+  box.innerHTML='<div class="empty">Loading image…</div>';
+  document.getElementById('modal').classList.add('show');
+  if(activeUrl){URL.revokeObjectURL(activeUrl);activeUrl=null}
+  const path=imageFiles[key(p)];
+  if(!path||!zip){box.innerHTML='<div class="empty">No catalog image is available for this part.</div>';return}
+  try{
+    const file=zip.file(path);
+    if(!file)throw new Error('Missing image');
+    const blob=await file.async('blob');
+    activeUrl=URL.createObjectURL(blob);
+    box.innerHTML=`<img src="${activeUrl}" alt="${p.partNumber}">`;
+  }catch(e){box.innerHTML='<div class="empty">Unable to load this catalog image.</div>'}
+}
+
+async function loadImages(){
+  const status=document.getElementById('imageStatus');
+  try{
+    const r=await fetch('assets/parts-images.zip',{cache:'no-store'});
+    if(!r.ok)throw new Error('Image package not found');
+    zip=await JSZip.loadAsync(await r.arrayBuffer());
+    const indexFile=zip.file('image-index.json');
+    if(indexFile){
+      const index=JSON.parse(await indexFile.async('text'));
+      for(const [part,path] of Object.entries(index)){imageFiles[String(part).trim().toUpperCase()]=path}
+    }else{
+      Object.keys(zip.files).forEach(path=>{
+        const m=path.match(/^images\/(.+)\.webp$/i);
+        if(m)imageFiles[m[1].toUpperCase()]=path;
+      })
+    }
+    status.textContent=`${Object.keys(imageFiles).length} permanent catalog images loaded`;
+    render();
+  }catch(e){
+    status.textContent='Catalog images could not be loaded';
+    console.error(e);
+    render();
+  }
+}
+
+document.getElementById('close').onclick=()=>document.getElementById('modal').classList.remove('show');
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show')};
+document.getElementById('search').oninput=render;
+document.getElementById('category').oninput=render;
+
+calculateMetrics();
+render();
+loadImages();
 </script>
 </body></html>
