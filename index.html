@@ -8,762 +8,87 @@
 <script src="parts.js"></script>
 
 <style>
-:root{
-  --navy:#102846;
-  --blue:#1754c0;
-  --line:#d8e1ed;
-  --bg:#eef3f8;
-  --text:#1d2b3a;
-  --muted:#66758a;
-  --green:#21723c;
-  --red:#d93838;
-}
+:root{--navy:#102846;--blue:#1754c0;--line:#d8e1ed;--bg:#eef3f8;--text:#1d2b3a;--muted:#66758a;--green:#21723c;--red:#d93838}
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
-
-header{
-  background:linear-gradient(90deg,#102846,#0b1d34);
-  color:#fff;
-  padding:14px 32px 0;
-}
-
-.topbar{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  padding-bottom:14px;
-}
-
-.brand h1{margin:0;font-size:25px}
-.brand small{color:#b9c7d8}
-.date{color:#dbe7f5;font-size:14px;white-space:nowrap}
-
-.menu{
-  display:flex;
-  gap:4px;
-  overflow-x:auto;
-  border-top:1px solid rgba(255,255,255,.12);
-}
-
-.menu button{
-  border:0;
-  border-radius:8px 8px 0 0;
-  padding:12px 15px;
-  background:transparent;
-  color:#dbe7f5;
-  font-weight:700;
-  cursor:pointer;
-  white-space:nowrap;
-  font-size:14px;
-}
-
-.menu button:hover,
-.menu button.active{
-  background:rgba(255,255,255,.14);
-  color:#fff;
-}
-
-.page{
-  padding:20px;
-  min-height:calc(100vh - 128px);
-}
-
-.view{display:none}
-.view.active{display:block}
-
-.dashboard-grid{
-  display:grid;
-  grid-template-columns:1.6fr 1fr;
-  gap:20px;
-}
-
-.panel{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:18px;
-  box-shadow:0 6px 20px rgba(30,60,90,.08);
-  padding:20px;
-}
-
-.panel-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
-  margin-bottom:18px;
-}
-
-.panel-head h2{margin:0;font-size:24px}
-.panel-head p{margin:4px 0 0;color:var(--muted)}
-.status{font-size:13px;color:var(--muted);text-align:right}
-
-.stats{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:14px;
-  margin-bottom:20px;
-}
-
-.stat{
-  padding:18px;
-  text-align:center;
-  border-radius:12px;
-  background:#edf3fa;
-}
-
-.stat:nth-child(2){background:#e9f6ed}
-.stat:nth-child(3){background:#fff6dc}
-.stat:nth-child(4){background:#fdeaea}
-
-.stat b{
-  display:block;
-  font-size:27px;
-  margin:7px 0;
-}
-
-.filters{
-  display:grid;
-  grid-template-columns:1.7fr 1fr;
-  gap:12px;
-  margin-bottom:16px;
-}
-
-.filters input{
-  width:100%;
-  padding:13px;
-  border:1px solid var(--line);
-  border-radius:9px;
-  font-size:15px;
-}
-
-.table-wrap{
-  overflow:auto;
-  border:1px solid var(--line);
-  border-radius:12px;
-}
-
-table{
-  width:100%;
-  border-collapse:collapse;
-  min-width:760px;
-}
-
-th,td{
-  padding:14px;
-  border-bottom:1px solid #e8edf4;
-  text-align:left;
-}
-
-th{
-  background:#edf2f8;
-  font-size:13px;
-}
-
-.part-link{
-  border:0;
-  background:none;
-  color:var(--blue);
-  padding:0;
-  font-weight:800;
-  cursor:pointer;
-  text-decoration:underline;
-  text-underline-offset:3px;
-}
-
-.available{color:var(--green);font-weight:700}
-.missing{color:var(--muted)}
-
-.badge{
-  display:inline-block;
-  padding:3px 8px;
-  border-radius:6px;
-  font-size:11px;
-  font-weight:700;
-}
-
-.badge-a{background:#fdeaea;color:#9c1c1c}
-.badge-b{background:#fff6dc;color:#8a6a08}
-.badge-c{background:#edf3fa;color:#1754c0}
-
-.alert-tag{
-  color:var(--red);
-  font-weight:700;
-}
-
-.report-title{
-  font-size:21px;
-  font-weight:800;
-  margin:0 0 6px;
-}
-
-.summary{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:10px;
-  margin:14px 0;
-}
-
-.mini{
-  padding:13px;
-  text-align:center;
-  border-radius:10px;
-  background:#edf3fa;
-}
-
-.mini b{
-  display:block;
-  font-size:22px;
-}
-
-.section{
-  border:1px solid var(--line);
-  border-radius:12px;
-  margin-top:14px;
-  overflow:hidden;
-}
-
-.section h3{
-  margin:0;
-  padding:12px 14px;
-  font-size:16px;
-  background:#f5f8fc;
-}
-
-.activity{
-  padding:12px 14px;
-  border-top:1px solid #edf1f5;
-  font-size:13px;
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  align-items:center;
-}
-
-.modal{
-  position:fixed;
-  inset:0;
-  background:rgba(8,20,35,.65);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
-  z-index:100;
-}
-
-.modal.show{display:flex}
-
-.modal-card{
-  background:#fff;
-  width:min(680px,100%);
-  border-radius:18px;
-  padding:20px;
-  position:relative;
-}
-
-.close{
-  position:absolute;
-  right:15px;
-  top:12px;
-  border:0;
-  background:#eef2f7;
-  font-size:20px;
-  padding:5px 11px;
-  cursor:pointer;
-}
-
-.modal-card h2{
-  margin:0 35px 5px 0;
-}
-
-.modal-meta{
-  color:var(--muted);
-  margin-bottom:16px;
-}
-
-.image-box{
-  height:360px;
-  border:2px dashed #ccd7e5;
-  border-radius:12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#f7f9fc;
-  overflow:hidden;
-}
-
-.image-box img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-}
-
-.empty{
-  text-align:center;
-  color:var(--muted);
-  padding:30px;
-}
-
-@media(max-width:1050px){
-  .dashboard-grid{grid-template-columns:1fr}
-  .stats{grid-template-columns:repeat(2,1fr)}
-}
-
-@media(max-width:600px){
-  header{padding:10px 16px 0}
-  .date{display:none}
-  .page{padding:10px}
-  .stats,.summary{grid-template-columns:1fr 1fr}
-  .filters{grid-template-columns:1fr}
-  .menu button{padding:11px 12px;font-size:13px}
-  .activity{align-items:flex-start;flex-direction:column;gap:5px}
-}
+header{background:linear-gradient(90deg,#102846,#0b1d34);color:#fff;padding:14px 32px 0}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:14px}
+.brand h1{margin:0;font-size:25px}.brand small{color:#b9c7d8}.date{color:#dbe7f5;font-size:14px;white-space:nowrap}
+.menu{display:flex;gap:4px;overflow-x:auto;border-top:1px solid rgba(255,255,255,.12)}
+.menu button{border:0;border-radius:8px 8px 0 0;padding:12px 15px;background:transparent;color:#dbe7f5;font-weight:700;cursor:pointer;white-space:nowrap;font-size:14px}
+.menu button:hover,.menu button.active{background:rgba(255,255,255,.14);color:#fff}
+.page{padding:20px;min-height:calc(100vh - 128px)}.view{display:none}.view.active{display:block}
+.dashboard-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 20px rgba(30,60,90,.08);padding:20px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:18px}.panel-head h2{margin:0;font-size:24px}.panel-head p{margin:4px 0 0;color:var(--muted)}.status{font-size:13px;color:var(--muted);text-align:right}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}.stat{padding:18px;text-align:center;border-radius:12px;background:#edf3fa}.stat:nth-child(2){background:#e9f6ed}.stat:nth-child(3){background:#fff6dc}.stat:nth-child(4){background:#fdeaea}.stat b{display:block;font-size:27px;margin:7px 0}
+.filters{display:grid;grid-template-columns:1.7fr 1fr;gap:12px;margin-bottom:16px}.filters input{width:100%;padding:13px;border:1px solid var(--line);border-radius:9px;font-size:15px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:760px}th,td{padding:14px;border-bottom:1px solid #e8edf4;text-align:left}th{background:#edf2f8;font-size:13px}
+.part-link{border:0;background:none;color:var(--blue);padding:0;font-weight:800;cursor:pointer;text-decoration:underline;text-underline-offset:3px}.available{color:var(--green);font-weight:700}.missing{color:var(--muted)}
+.badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:700}.badge-a{background:#fdeaea;color:#9c1c1c}.badge-b{background:#fff6dc;color:#8a6a08}.badge-c{background:#edf3fa;color:#1754c0}.alert-tag{color:var(--red);font-weight:700}
+.report-title{font-size:21px;font-weight:800;margin:0 0 6px}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.mini{padding:13px;text-align:center;border-radius:10px;background:#edf3fa}.mini b{display:block;font-size:22px}
+.section{border:1px solid var(--line);border-radius:12px;margin-top:14px;overflow:hidden}.section h3{margin:0;padding:12px 14px;font-size:16px;background:#f5f8fc}.activity{padding:12px 14px;border-top:1px solid #edf1f5;font-size:13px;display:flex;justify-content:space-between;gap:15px;align-items:center}
+.modal{position:fixed;inset:0;background:rgba(8,20,35,.65);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal.show{display:flex}.modal-card{background:#fff;width:min(680px,100%);border-radius:18px;padding:20px;position:relative}.close{position:absolute;right:15px;top:12px;border:0;background:#eef2f7;font-size:20px;padding:5px 11px;cursor:pointer}.modal-card h2{margin:0 35px 5px 0}.modal-meta{color:var(--muted);margin-bottom:16px}
+.image-box{height:360px;border:2px dashed #ccd7e5;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#f7f9fc;overflow:hidden}.image-box img{width:100%;height:100%;object-fit:contain}.empty{text-align:center;color:var(--muted);padding:30px}
+@media(max-width:1050px){.dashboard-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){header{padding:10px 16px 0}.date{display:none}.page{padding:10px}.stats,.summary{grid-template-columns:1fr 1fr}.filters{grid-template-columns:1fr}.menu button{padding:11px 12px;font-size:13px}.activity{align-items:flex-start;flex-direction:column;gap:5px}}
 </style>
 </head>
-
 <body>
-
-<header>
-  <div class="topbar">
-    <div class="brand">
-      <h1>🚚 Chassis Parts Inventory</h1>
-      <small>Parts Catalog & Stock Management</small>
-    </div>
-    <div class="date" id="today"></div>
-  </div>
-
-  <nav class="menu">
-    <button class="active" data-view="dashboard">🏠 Dashboard</button>
-    <button data-view="parts">📦 Parts</button>
-    <button data-view="inventory">➕ Inventory</button>
-    <button data-view="counts">🔄 Counts</button>
-    <button data-view="purchasing">🛒 Purchasing</button>
-    <button data-view="alerts">⚠️ Alerts</button>
-    <button data-view="reports">📊 Reports</button>
-    <button data-view="setup">⚙️ Setup</button>
-  </nav>
-</header>
-
+<header><div class="topbar"><div class="brand"><h1>🚚 Chassis Parts Inventory</h1><small>Parts Catalog & Stock Management</small></div><div class="date" id="today"></div></div><nav class="menu"><button class="active" data-view="dashboard">🏠 Dashboard</button><button data-view="parts">📦 Parts</button><button data-view="inventory">➕ Inventory</button><button data-view="counts">🔄 Counts</button><button data-view="purchasing">🛒 Purchasing</button><button data-view="alerts">⚠️ Alerts</button><button data-view="reports">📊 Reports</button><button data-view="setup">⚙️ Setup</button></nav></header>
 <main class="page">
-
-<section class="view active" id="dashboard">
-  <div class="dashboard-grid">
-
-    <div class="panel">
-      <div class="panel-head">
-        <div>
-          <h2>Stock Levels</h2>
-          <p>Current Inventory Status & Trends</p>
-        </div>
-        <div class="status" id="imageStatus">Checking repository images…</div>
-      </div>
-
-      <div class="stats">
-        <div class="stat">Total Parts<b id="total">0</b><small>In Catalog</small></div>
-        <div class="stat">In Stock<b id="inStockCount">0</b><small>Healthy Stock</small></div>
-        <div class="stat">Low Stock<b id="lowStockCount">0</b><small>Needs Review</small></div>
-        <div class="stat">Out of Stock<b id="outStockCount">0</b><small>Needs Order</small></div>
-      </div>
-
-      <div class="section">
-        <h3>Quick Navigation</h3>
-        <div class="activity"><span>📦 <b>Parts</b> — Search the catalog and view catalog images.</span></div>
-        <div class="activity"><span>➕ <b>Inventory</b> — Receive, issue, adjust, return, or transfer parts.</span></div>
-        <div class="activity"><span>⚠️ <b>Alerts</b> — Review parts needing reorder.</span></div>
-        <div class="activity"><span>🔄 <b>Counts</b> — Manage ABC cycle counts.</span></div>
-      </div>
-    </div>
-
-    <div class="panel">
-      <p class="report-title">Inventory Overview</p>
-      <p style="color:var(--muted);margin-top:0">Smart ordering trends & ABC cycle counts</p>
-
-      <div class="summary">
-        <div class="mini"><b id="summaryTotal">0</b>Total Parts</div>
-        <div class="mini"><b id="summaryLow">0</b>Low Stock</div>
-        <div class="mini"><b id="summaryOut">0</b>Out of Stock</div>
-        <div class="mini"><b>Active</b>Status</div>
-      </div>
-
-      <div class="section">
-        <h3>⚠ Low Stock & Smart Reorder Alerts</h3>
-        <div id="dashboardLowStockList"></div>
-      </div>
-
-      <div class="section">
-        <h3>🔄 ABC Cycle Count Schedule</h3>
-        <div id="dashboardCycleCountList"></div>
-      </div>
-
-      <div class="section">
-        <h3>◷ Recent Activity</h3>
-        <div class="activity">
-          <span>Master parts catalog loaded.</span>
-          <span style="color:var(--muted)">Just now</span>
-        </div>
-        <div class="activity">
-          <span>Click any <b>part number</b> in Parts to view details and its image.</span>
-          <span style="color:var(--muted)">System</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="view" id="parts">
-  <div class="panel">
-    <div class="panel-head">
-      <div>
-        <h2>Parts Catalog</h2>
-        <p>Search the master catalog and view repository images.</p>
-      </div>
-      <div class="status">Click any part number for details</div>
-    </div>
-
-    <div class="filters">
-      <input id="search" placeholder="🔎 Search part number, description, or category...">
-      <input id="category" placeholder="Filter by category...">
-    </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Part Number</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>ABC</th>
-            <th>Stock / Reorder</th>
-            <th>Image</th>
-          </tr>
-        </thead>
-        <tbody id="rows"></tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="view" id="inventory">
-  <div class="panel">
-    <p class="report-title">➕ Inventory Transactions</p>
-    <p style="color:var(--muted);margin-top:0">Track the movement of parts through your inventory.</p>
-    <div class="section">
-      <h3>Available Inventory Actions</h3>
-      <div class="activity"><span><b>Receive Parts</b> — Add incoming parts to stock.</span></div>
-      <div class="activity"><span><b>Issue Parts</b> — Remove parts when used for a repair.</span></div>
-      <div class="activity"><span><b>Adjust Inventory</b> — Correct stock quantities.</span></div>
-      <div class="activity"><span><b>Return Parts</b> — Put unused parts back into inventory.</span></div>
-      <div class="activity"><span><b>Transfer Parts</b> — Move parts between storage locations.</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="view" id="counts">
-  <div class="panel">
-    <p class="report-title">🔄 Cycle Counts</p>
-    <p style="color:var(--muted);margin-top:0">ABC-based inventory count scheduling.</p>
-    <div class="section">
-      <h3>ABC Cycle Count Schedule</h3>
-      <div id="cycleCountList"></div>
-    </div>
-  </div>
-</section>
-
-<section class="view" id="purchasing">
-  <div class="panel">
-    <p class="report-title">🛒 Purchasing</p>
-    <p style="color:var(--muted);margin-top:0">Manage replenishment and purchasing activity.</p>
-    <div class="section">
-      <h3>Purchasing Tools</h3>
-      <div class="activity"><span>Reorder List</span></div>
-      <div class="activity"><span>Purchase Orders</span></div>
-      <div class="activity"><span>Open Orders</span></div>
-      <div class="activity"><span>Expected Deliveries</span></div>
-      <div class="activity"><span>Suppliers</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="view" id="alerts">
-  <div class="panel">
-    <p class="report-title">⚠ Inventory Alerts</p>
-    <p style="color:var(--muted);margin-top:0">Parts needing attention based on stock and reorder targets.</p>
-    <div class="section">
-      <h3>Low Stock & Smart Reorder Alerts</h3>
-      <div id="lowStockList"></div>
-    </div>
-  </div>
-</section>
-
-<section class="view" id="reports">
-  <div class="panel">
-    <p class="report-title">📊 Reports</p>
-    <p style="color:var(--muted);margin-top:0">Inventory reporting and analysis.</p>
-    <div class="section">
-      <h3>Available Reports</h3>
-      <div class="activity"><span>Inventory On Hand</span></div>
-      <div class="activity"><span>Low Stock Report</span></div>
-      <div class="activity"><span>Out of Stock Report</span></div>
-      <div class="activity"><span>Usage History</span></div>
-      <div class="activity"><span>Inventory Movement History</span></div>
-      <div class="activity"><span>ABC Analysis</span></div>
-      <div class="activity"><span>Cycle Count Report</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="view" id="setup">
-  <div class="panel">
-    <p class="report-title">⚙️ Setup</p>
-    <p style="color:var(--muted);margin-top:0">Configure the information that supports your inventory system.</p>
-    <div class="section">
-      <h3>Configuration</h3>
-      <div class="activity"><span>Categories</span></div>
-      <div class="activity"><span>Suppliers</span></div>
-      <div class="activity"><span>Storage Locations</span></div>
-      <div class="activity"><span>Reorder Levels</span></div>
-      <div class="activity"><span>Lead Times</span></div>
-      <div class="activity"><span>Import / Export Data</span></div>
-    </div>
-  </div>
-</section>
-
+<section class="view active" id="dashboard"><div class="dashboard-grid"><div class="panel"><div class="panel-head"><div><h2>Stock Levels</h2><p>Current Inventory Status & Trends</p></div><div class="status" id="imageStatus">Checking repository images…</div></div><div class="stats"><div class="stat">Total Parts<b id="total">0</b><small>In Catalog</small></div><div class="stat">In Stock<b id="inStockCount">0</b><small>Healthy Stock</small></div><div class="stat">Low Stock<b id="lowStockCount">0</b><small>Needs Review</small></div><div class="stat">Out of Stock<b id="outStockCount">0</b><small>Needs Order</small></div></div><div class="section"><h3>Quick Navigation</h3><div class="activity"><span>📦 <b>Parts</b> — Search the catalog and view catalog images.</span></div><div class="activity"><span>➕ <b>Inventory</b> — Receive, issue, adjust, return, or transfer parts.</span></div><div class="activity"><span>⚠️ <b>Alerts</b> — Review parts needing reorder.</span></div><div class="activity"><span>🔄 <b>Counts</b> — Manage ABC cycle counts.</span></div></div></div><div class="panel"><p class="report-title">Inventory Overview</p><p style="color:var(--muted);margin-top:0">Smart ordering trends & ABC cycle counts</p><div class="summary"><div class="mini"><b id="summaryTotal">0</b>Total Parts</div><div class="mini"><b id="summaryLow">0</b>Low Stock</div><div class="mini"><b id="summaryOut">0</b>Out of Stock</div><div class="mini"><b>Active</b>Status</div></div><div class="section"><h3>⚠ Low Stock & Smart Reorder Alerts</h3><div id="dashboardLowStockList"></div></div><div class="section"><h3>🔄 ABC Cycle Count Schedule</h3><div id="dashboardCycleCountList"></div></div><div class="section"><h3>◷ Recent Activity</h3><div class="activity"><span>Master parts catalog loaded.</span><span style="color:var(--muted)">Just now</span></div><div class="activity"><span>Click any <b>part number</b> in Parts to view details and its image.</span><span style="color:var(--muted)">System</span></div></div></div></div></section>
+<section class="view" id="parts"><div class="panel"><div class="panel-head"><div><h2>Parts Catalog</h2><p>Search the master catalog and view repository images.</p></div><div class="status">Click any part number for details</div></div><div class="filters"><input id="search" placeholder="🔎 Search part number, description, or category..."><input id="category" placeholder="Filter by category..."></div><div class="table-wrap"><table><thead><tr><th>Part Number</th><th>Description</th><th>Category</th><th>ABC</th><th>Stock / Reorder</th><th>Image</th></tr></thead><tbody id="rows"></tbody></table></div></div></section>
+<section class="view" id="inventory"><div class="panel"><p class="report-title">➕ Inventory Transactions</p><p style="color:var(--muted);margin-top:0">Track the movement of parts through your inventory.</p><div class="section"><h3>Available Inventory Actions</h3><div class="activity"><span><b>Receive Parts</b> — Add incoming parts to stock.</span></div><div class="activity"><span><b>Issue Parts</b> — Remove parts when used for a repair.</span></div><div class="activity"><span><b>Adjust Inventory</b> — Correct stock quantities.</span></div><div class="activity"><span><b>Return Parts</b> — Put unused parts back into inventory.</span></div><div class="activity"><span><b>Transfer Parts</b> — Move parts between storage locations.</span></div></div></div></section>
+<section class="view" id="counts"><div class="panel"><p class="report-title">🔄 Cycle Counts</p><p style="color:var(--muted);margin-top:0">ABC-based inventory count scheduling.</p><div class="section"><h3>ABC Cycle Count Schedule</h3><div id="cycleCountList"></div></div></div></section>
+<section class="view" id="purchasing"><div class="panel"><p class="report-title">🛒 Purchasing</p><p style="color:var(--muted);margin-top:0">Manage replenishment and purchasing activity.</p><div class="section"><h3>Purchasing Tools</h3><div class="activity"><span>Reorder List</span></div><div class="activity"><span>Purchase Orders</span></div><div class="activity"><span>Open Orders</span></div><div class="activity"><span>Expected Deliveries</span></div><div class="activity"><span>Suppliers</span></div></div></div></section>
+<section class="view" id="alerts"><div class="panel"><p class="report-title">⚠ Inventory Alerts</p><p style="color:var(--muted);margin-top:0">Parts needing attention based on stock and reorder targets.</p><div class="section"><h3>Low Stock & Smart Reorder Alerts</h3><div id="lowStockList"></div></div></div></section>
+<section class="view" id="reports"><div class="panel"><p class="report-title">📊 Reports</p><p style="color:var(--muted);margin-top:0">Inventory reporting and analysis.</p><div class="section"><h3>Available Reports</h3><div class="activity"><span>Inventory On Hand</span></div><div class="activity"><span>Low Stock Report</span></div><div class="activity"><span>Out of Stock Report</span></div><div class="activity"><span>Usage History</span></div><div class="activity"><span>Inventory Movement History</span></div><div class="activity"><span>ABC Analysis</span></div><div class="activity"><span>Cycle Count Report</span></div></div></div></section>
+<section class="view" id="setup"><div class="panel"><p class="report-title">⚙️ Setup</p><p style="color:var(--muted);margin-top:0">Configure the information that supports your inventory system.</p><div class="section"><h3>Configuration</h3><div class="activity"><span>Categories</span></div><div class="activity"><span>Suppliers</span></div><div class="activity"><span>Storage Locations</span></div><div class="activity"><span>Reorder Levels</span></div><div class="activity"><span>Lead Times</span></div><div class="activity"><span>Import / Export Data</span></div></div></div></section>
 </main>
-
-<div class="modal" id="modal">
-  <div class="modal-card">
-    <button class="close" id="close">×</button>
-    <h2 id="modalPart"></h2>
-    <div class="modal-meta" id="modalDescription"></div>
-    <div class="image-box" id="imageBox"></div>
-  </div>
-</div>
-
+<div class="modal" id="modal"><div class="modal-card"><button class="close" id="close">×</button><h2 id="modalPart"></h2><div class="modal-meta" id="modalDescription"></div><div class="image-box" id="imageBox"></div></div></div>
 <script>
-const catalog=(window.parts||[]).map(p=>({
-  ...p,
-  stock:p.stock!==undefined?p.stock:Math.floor(Math.random()*25),
-  weeklyUsage:p.weeklyUsage||Math.floor(Math.random()*5)+1,
-  leadTimeDays:p.leadTimeDays||7,
-  abc:p.abc||(Math.random()>.7?'A':Math.random()>.4?'B':'C')
-}));
-
+const catalog=(window.parts||[]).map(p=>({...p,stock:p.stock!==undefined?p.stock:Math.floor(Math.random()*25),weeklyUsage:p.weeklyUsage||Math.floor(Math.random()*5)+1,leadTimeDays:p.leadTimeDays||7,abc:p.abc||(Math.random()>.7?'A':Math.random()>.4?'B':'C')}));
 const rows=document.getElementById('rows');
 const imageCache={};
+document.getElementById('today').textContent=new Date().toLocaleString([],{weekday:'short',month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'});
 
-document.getElementById('today').textContent=new Date().toLocaleString([],{
-  weekday:'short',
-  month:'short',
-  day:'numeric',
-  year:'numeric',
-  hour:'numeric',
-  minute:'2-digit'
-});
-
-function imageKey(partNumber){
-  return String(partNumber)
-    .trim()
-    .toLowerCase()
-    .replace(/[\/\\:*?"<>|]/g,'-')
-    .replace(/\s+/g,'-');
-}
-
-function imageCandidates(partNumber){
-  const key=imageKey(partNumber);
-  const raw=partNumber.trim();
-  return [
-    `./assets/images/${key}.webp`,
-    `./assets/images/${key}.png`,
-    `./assets/images/${key}.jpg`,
-    `./assets/images/${key}.JPG`,
-    `./assets/images/${raw}.webp`,
-    `./assets/images/${raw}.jpg`
-  ];
-}
-
-function testImage(url){
-  return new Promise(resolve=>{
-    const img=new Image();
-    img.onload=()=>resolve(url);
-    img.onerror=()=>resolve(null);
-    img.src=url;
-  });
-}
-
-async function findImage(partNumber){
-  const cacheKey=imageKey(partNumber);
-  if(imageCache[cacheKey]!==undefined){
-    return imageCache[cacheKey];
-  }
-
-  for(const url of imageCandidates(partNumber)){
-    const found=await testImage(url);
-    if(found){
-      imageCache[cacheKey]=found;
-      return found;
+function imageKey(partNumber){return String(partNumber||'').trim().toLowerCase().replace(/[\/\\:*?"<>|]/g,'-').replace(/\s+/g,'-')}
+function mappedImageValue(part){return part.image||part.Image||part.imagePath||part.ImagePath||part.catalogImage||part.CatalogImage||part.catalog_image||part.Catalog_Image||null}
+function normalizeUrl(value){if(!value)return null;return String(value).trim().replace(/^\.\//,'')}
+function imageCandidates(part){
+  const mapped=normalizeUrl(mappedImageValue(part));
+  const candidates=[];
+  if(mapped){
+    if(/^https?:\/\//i.test(mapped)) candidates.push(mapped);
+    else {
+      const file=mapped.split('/').pop();
+      // Images currently in the repository root, so try the exact mapped filename first.
+      candidates.push(`./${file}`);
+      // Also support either path layout if images are moved later.
+      candidates.push(`./${mapped}`);
+      candidates.push(`./assets/images/${file}`);
+      if(mapped.startsWith('images/')) candidates.push(`./assets/${mapped}`);
     }
   }
-
-  imageCache[cacheKey]=null;
-  return null;
+  const key=imageKey(part.partNumber);
+  const raw=String(part.partNumber||'').trim();
+  candidates.push(`./${key}.png`,`./${key}.webp`,`./${key}.jpg`,`./assets/images/${key}.png`,`./assets/images/${key}.webp`,`./assets/images/${key}.jpg`,`./${raw}.png`);
+  return [...new Set(candidates)];
 }
-
-function calculateMetrics(){
-  let total=catalog.length;
-  let outStock=0, lowStock=0, inStock=0;
-  let lowListHtml='';
-
-  catalog.forEach(p=>{
-    const dailyUsage=p.weeklyUsage/7;
-    const reorderPoint=Math.ceil(dailyUsage*p.leadTimeDays+2);
-
-    if(p.stock<=0){
-      outStock++;
-      lowListHtml+=`<div class="activity"><span><b>${p.partNumber}</b> (${p.description})</span><span class="alert-tag">OUT OF STOCK</span></div>`;
-    }else if(p.stock<=reorderPoint){
-      lowStock++;
-      lowListHtml+=`<div class="activity"><span><b>${p.partNumber}</b> (${p.description})</span><span class="alert-tag">Low Stock: ${p.stock} left (≤${reorderPoint})</span></div>`;
-    }else{
-      inStock++;
-    }
-  });
-
-  if(!lowListHtml){
-    lowListHtml=`<div class="activity">All tracked parts are currently above minimum reorder thresholds.</div>`;
-  }
-
-  const counts={
-    A:catalog.filter(x=>x.abc==='A').length,
-    B:catalog.filter(x=>x.abc==='B').length,
-    C:catalog.filter(x=>x.abc==='C').length
-  };
-
-  const cycleHtml=`
-    <div class="activity"><span><b>Class A (${counts.A} parts)</b> — High-cost safety components</span><span style="color:var(--blue);font-weight:700">Monthly Count</span></div>
-    <div class="activity"><span><b>Class B (${counts.B} parts)</b> — Moderate running gear</span><span style="color:var(--blue);font-weight:700">Quarterly Count</span></div>
-    <div class="activity"><span><b>Class C (${counts.C} parts)</b> — High-volume hardware</span><span style="color:var(--blue);font-weight:700">Semi-Annual Count</span></div>
-  `;
-
-  document.getElementById('total').textContent=total;
-  document.getElementById('summaryTotal').textContent=total;
-  document.getElementById('inStockCount').textContent=inStock;
-  document.getElementById('lowStockCount').textContent=lowStock;
-  document.getElementById('outStockCount').textContent=outStock;
-  document.getElementById('summaryLow').textContent=lowStock;
-  document.getElementById('summaryOut').textContent=outStock;
-
-  document.getElementById('lowStockList').innerHTML=lowListHtml;
-  document.getElementById('dashboardLowStockList').innerHTML=lowListHtml;
-  document.getElementById('cycleCountList').innerHTML=cycleHtml;
-  document.getElementById('dashboardCycleCountList').innerHTML=cycleHtml;
+function testImage(url){return new Promise(resolve=>{const img=new Image();img.onload=()=>resolve(url);img.onerror=()=>resolve(null);img.src=url})}
+async function findImage(part){
+  const cacheKey=imageKey(part.partNumber);
+  if(imageCache[cacheKey]!==undefined)return imageCache[cacheKey];
+  for(const url of imageCandidates(part)){const found=await testImage(url);if(found){imageCache[cacheKey]=found;return found}}
+  imageCache[cacheKey]=null;return null;
 }
-
-async function render(){
-  const q=document.getElementById('search').value.toLowerCase();
-  const c=document.getElementById('category').value.toLowerCase();
-  rows.innerHTML='';
-
-  const filtered=catalog.filter(p=>
-    [p.partNumber,p.description,p.category].join(' ').toLowerCase().includes(q) &&
-    String(p.category).toLowerCase().includes(c)
-  );
-
-  for(const p of filtered){
-    const dailyUsage=p.weeklyUsage/7;
-    const reorderPoint=Math.ceil(dailyUsage*p.leadTimeDays+2);
-    const isLow=p.stock<=reorderPoint;
-    const badgeClass=p.abc==='A'?'badge-a':p.abc==='B'?'badge-b':'badge-c';
-
-    const tr=document.createElement('tr');
-    tr.innerHTML=`
-      <td><button class="part-link">${p.partNumber}</button></td>
-      <td>${p.description}</td>
-      <td>${p.category}</td>
-      <td><span class="badge ${badgeClass}">${p.abc} Class</span></td>
-      <td>
-        <b>${p.stock} on hand</b><br>
-        <small style="color:var(--muted)">Usage: ${p.weeklyUsage}/wk | Target: ≤${reorderPoint}</small>
-        ${isLow?'<br><span style="color:var(--red);font-size:11px;font-weight:700">⚠ Reorder Needed</span>':''}
-      </td>
-      <td class="missing">Checking…</td>
-    `;
-
-    tr.querySelector('.part-link').onclick=()=>openPart(p);
-    rows.appendChild(tr);
-
-    const imageCell=tr.lastElementChild;
-    findImage(p.partNumber).then(url=>{
-      if(url){
-        imageCell.className='available';
-        imageCell.textContent='📷 Available';
-      }else{
-        imageCell.className='missing';
-        imageCell.textContent='—';
-      }
-    });
-  }
-}
-
-async function openPart(p){
-  document.getElementById('modalPart').textContent=p.partNumber;
-  document.getElementById('modalDescription').textContent=`${p.description} • ${p.category} • ABC: ${p.abc} Class`;
-  const box=document.getElementById('imageBox');
-  box.innerHTML=`<div class="empty">Loading catalog image…</div>`;
-  document.getElementById('modal').classList.add('show');
-
-  const imageUrl=await findImage(p.partNumber);
-  if(imageUrl){
-    box.innerHTML=`<img src="${imageUrl}" alt="${p.partNumber}">`;
-  }else{
-    box.innerHTML=`
-      <div class="empty">
-        <b>Part Number:</b> ${p.partNumber}<br><br>
-        ${p.description}<br><br>
-        <span style="color:var(--muted)">No image found in <code>assets/images/</code> matching this part number.</span>
-      </div>
-    `;
-  }
-}
-
-document.getElementById('close').onclick=()=>document.getElementById('modal').classList.remove('show');
-document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show')};
-document.getElementById('search').oninput=render;
-document.getElementById('category').oninput=render;
-
-document.querySelectorAll('.menu button').forEach(button=>{
-  button.onclick=()=>{
-    document.querySelectorAll('.menu button').forEach(item=>item.classList.remove('active'));
-    document.querySelectorAll('.view').forEach(view=>view.classList.remove('active'));
-    button.classList.add('active');
-    document.getElementById(button.dataset.view).classList.add('active');
-  };
-});
-
-async function checkImageFolder(){
-  const status=document.getElementById('imageStatus');
-  if(!catalog.length){status.textContent='No parts loaded';return;}
-
-  let checked=0, found=0;
-  const sample=catalog.slice(0,Math.min(10,catalog.length));
-
-  for(const part of sample){
-    const image=await findImage(part.partNumber);
-    checked++;
-    if(image) found++;
-  }
-
-  if(found>0){
-    status.textContent=`Repository images active (${found}/${checked} checked)`;
-  }else{
-    status.textContent=`No images found in assets/images/`;
-  }
-}
-
-calculateMetrics();
-render();
-checkImageFolder();
+function calculateMetrics(){let total=catalog.length,outStock=0,lowStock=0,inStock=0,lowListHtml='';catalog.forEach(p=>{const dailyUsage=p.weeklyUsage/7,reorderPoint=Math.ceil(dailyUsage*p.leadTimeDays+2);if(p.stock<=0){outStock++;lowListHtml+=`<div class="activity"><span><b>${p.partNumber}</b> (${p.description})</span><span class="alert-tag">OUT OF STOCK</span></div>`}else if(p.stock<=reorderPoint){lowStock++;lowListHtml+=`<div class="activity"><span><b>${p.partNumber}</b> (${p.description})</span><span class="alert-tag">Low Stock: ${p.stock} left (≤${reorderPoint})</span></div>`}else inStock++});if(!lowListHtml)lowListHtml='<div class="activity">All tracked parts are currently above minimum reorder thresholds.</div>';const counts={A:catalog.filter(x=>x.abc==='A').length,B:catalog.filter(x=>x.abc==='B').length,C:catalog.filter(x=>x.abc==='C').length};const cycleHtml=`<div class="activity"><span><b>Class A (${counts.A} parts)</b> — High-cost safety components</span><span style="color:var(--blue);font-weight:700">Monthly Count</span></div><div class="activity"><span><b>Class B (${counts.B} parts)</b> — Moderate running gear</span><span style="color:var(--blue);font-weight:700">Quarterly Count</span></div><div class="activity"><span><b>Class C (${counts.C} parts)</b> — High-volume hardware</span><span style="color:var(--blue);font-weight:700">Semi-Annual Count</span></div>`;document.getElementById('total').textContent=total;document.getElementById('summaryTotal').textContent=total;document.getElementById('inStockCount').textContent=inStock;document.getElementById('lowStockCount').textContent=lowStock;document.getElementById('outStockCount').textContent=outStock;document.getElementById('summaryLow').textContent=lowStock;document.getElementById('summaryOut').textContent=outStock;document.getElementById('lowStockList').innerHTML=lowListHtml;document.getElementById('dashboardLowStockList').innerHTML=lowListHtml;document.getElementById('cycleCountList').innerHTML=cycleHtml;document.getElementById('dashboardCycleCountList').innerHTML=cycleHtml}
+async function render(){const q=document.getElementById('search').value.toLowerCase(),c=document.getElementById('category').value.toLowerCase();rows.innerHTML='';const filtered=catalog.filter(p=>[p.partNumber,p.description,p.category].join(' ').toLowerCase().includes(q)&&String(p.category).toLowerCase().includes(c));for(const p of filtered){const dailyUsage=p.weeklyUsage/7,reorderPoint=Math.ceil(dailyUsage*p.leadTimeDays+2),isLow=p.stock<=reorderPoint,badgeClass=p.abc==='A'?'badge-a':p.abc==='B'?'badge-b':'badge-c';const tr=document.createElement('tr');tr.innerHTML=`<td><button class="part-link">${p.partNumber}</button></td><td>${p.description}</td><td>${p.category}</td><td><span class="badge ${badgeClass}">${p.abc} Class</span></td><td><b>${p.stock} on hand</b><br><small style="color:var(--muted)">Usage: ${p.weeklyUsage}/wk | Target: ≤${reorderPoint}</small>${isLow?'<br><span style="color:var(--red);font-size:11px;font-weight:700">⚠ Reorder Needed</span>':''}</td><td class="missing">Checking…</td>`;tr.querySelector('.part-link').onclick=()=>openPart(p);rows.appendChild(tr);const imageCell=tr.lastElementChild;findImage(p).then(url=>{if(url){imageCell.className='available';imageCell.textContent='📷 Available'}else{imageCell.className='missing';imageCell.textContent='—'}})}}
+async function openPart(p){document.getElementById('modalPart').textContent=p.partNumber;document.getElementById('modalDescription').textContent=`${p.description} • ${p.category} • ABC: ${p.abc} Class`;const box=document.getElementById('imageBox');box.innerHTML='<div class="empty">Loading catalog image…</div>';document.getElementById('modal').classList.add('show');const imageUrl=await findImage(p);if(imageUrl){box.innerHTML=`<img src="${imageUrl}" alt="${p.partNumber}">`}else{const mapped=mappedImageValue(p);box.innerHTML=`<div class="empty"><b>Part Number:</b> ${p.partNumber}<br><br>${p.description}<br><br><span style="color:var(--muted)">${mapped?`Mapped image: <code>${mapped}</code> was not found in the repository.`:'No mapped catalog image is assigned to this part.'}</span></div>`}}
+document.getElementById('close').onclick=()=>document.getElementById('modal').classList.remove('show');document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show')};document.getElementById('search').oninput=render;document.getElementById('category').oninput=render;document.querySelectorAll('.menu button').forEach(button=>{button.onclick=()=>{document.querySelectorAll('.menu button').forEach(item=>item.classList.remove('active'));document.querySelectorAll('.view').forEach(view=>view.classList.remove('active'));button.classList.add('active');document.getElementById(button.dataset.view).classList.add('active')}});
+async function checkImageFolder(){const status=document.getElementById('imageStatus');if(!catalog.length){status.textContent='No parts loaded';return}let checked=0,found=0;for(const part of catalog.slice(0,Math.min(10,catalog.length))){const image=await findImage(part);checked++;if(image)found++}status.textContent=found>0?`Repository images active (${found}/${checked} checked)`:`No mapped images found`}
+calculateMetrics();render();checkImageFolder();
 </script>
-
 </body>
 </html>
