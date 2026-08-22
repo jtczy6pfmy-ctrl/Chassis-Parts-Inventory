@@ -1,1 +1,1721 @@
-
+[
+  {
+    "Section": "ABS Components",
+    "JobCode": 2500.0,
+    "PartNumber": "BEN802052",
+    "Description": "ABS EXT CABLE 60\"",
+    "Manufacturer": "Bendix",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=BEN802052"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2500.0,
+    "PartNumber": "MIDAL919802",
+    "Description": "HALDEX 4.9 FT",
+    "Manufacturer": "Haldex",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL919802"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2500.0,
+    "PartNumber": "MIDAL919803",
+    "Description": "HALDEX 6.6 FT",
+    "Manufacturer": "Haldex",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL919803"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2500.0,
+    "PartNumber": "MIDAL919903",
+    "Description": "EXTENSION POWER 1M",
+    "Manufacturer": "Haldex",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL919903"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2500.0,
+    "PartNumber": "WBC4497130180",
+    "Description": "WABCO 6 FT",
+    "Manufacturer": "Wabco",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4497130180"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2501.0,
+    "PartNumber": "WBC4410309082",
+    "Description": "5.8 FT STRAIGHT HYDRAULIC BRAKES",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4410309082"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2501.0,
+    "PartNumber": "PROEL955335",
+    "Description": "90 DEG 1 FT RIGHT ANG W/CLIP",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROEL955335"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2502.0,
+    "PartNumber": "HDXAL919347",
+    "Description": "OLD TO NEW ADAPTER CABLE",
+    "Manufacturer": "Haldex",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=HDXAL919347"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2502.0,
+    "PartNumber": "WBC4493260100",
+    "Description": "3 FT ABS POWER ADAPT CABLE",
+    "Manufacturer": "Wabco",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4493260100"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2502.0,
+    "PartNumber": "WBC4494310080",
+    "Description": "RETRO KIT 4S/2M .8M REL VLV CAB",
+    "Manufacturer": "Wabco",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4494310080"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2502.0,
+    "PartNumber": "WBC8946049440",
+    "Description": "3 FT POWER CABLE EASY STOP",
+    "Manufacturer": "Wabco",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=WBC8946049440"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2502.0,
+    "PartNumber": "WBC8946062752",
+    "Description": "POWER CABLE RLY VLV ENHNCD 11.81",
+    "Manufacturer": "Wabco",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=WBC8946062752"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2502.0,
+    "PartNumber": "WBC8946073120",
+    "Description": "POWER CABLE ADAPTER EASY STOP",
+    "Manufacturer": "Wabco",
+    "Notes": "Also used with Job Code 2503,2507",
+    "MartecURL": "https://www.martecintl.com/search?q=WBC8946073120"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2503.0,
+    "PartNumber": "BENK109808",
+    "Description": "ABS MOD VALVE BENDIX TABS 6S",
+    "Manufacturer": "Bendix",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BENK109808"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2503.0,
+    "PartNumber": "HDXAQ961402",
+    "Description": "KIT 2S/1M FFABS",
+    "Manufacturer": "Haldex",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=HDXAQ961402"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2503.0,
+    "PartNumber": "WBC4006120890",
+    "Description": "2S/1M KIT MERITOR R955344",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4006120890"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2503.0,
+    "PartNumber": "WBC4006120900",
+    "Description": "2S/1M TCSII MERITOR S4005001010",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4006120900"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2504.0,
+    "PartNumber": "WBC4008506020",
+    "Description": "ABS MOD VALVE DUAL MOD KIT",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4008506020"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2504.0,
+    "PartNumber": "WBC4721950330",
+    "Description": "MOD SINGLE FOR 1M SYSTEMS",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4721950330"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2504.0,
+    "PartNumber": "MIDAL364041",
+    "Description": "RELAY 6 PORT WITHOUT CABLE",
+    "Manufacturer": "Haldex",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL364041"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2504.0,
+    "PartNumber": "MIDAL430624",
+    "Description": "FF4 PORT SPRING BRAKE 12V NO ECU",
+    "Manufacturer": "Haldex",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL430624"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2504.0,
+    "PartNumber": "MIDAL430614",
+    "Description": "FFABS 4 PORT OE N4306KD",
+    "Manufacturer": "Haldex",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL430614"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2504.0,
+    "PartNumber": "MIDAL430668",
+    "Description": "SERVICE BRAKE PRIORITY",
+    "Manufacturer": "Haldex",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL430668"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2505.0,
+    "PartNumber": "WBC4784070584",
+    "Description": "ECU BRACKET FOR 2S/1M",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4784070584"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2507.0,
+    "PartNumber": "WBC4006120940",
+    "Description": "ABS ECU 2S/1M ECU TRAILER",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4006120940"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2507.0,
+    "PartNumber": "WBC4008506010",
+    "Description": "2S/2M 4S/2M 4S/3M ECU KIT",
+    "Manufacturer": "Wabco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=WBC4008506010"
+  },
+  {
+    "Section": "ABS Components",
+    "JobCode": 2507.0,
+    "PartNumber": "MIDAL919338",
+    "Description": "ECU PLC SELECT 1M",
+    "Manufacturer": "Haldex",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MIDAL919338"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH3838S36",
+    "Description": "36in 3/8in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH3838S36"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH3838S48",
+    "Description": "48in 3/8in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH3838S48"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH3838S60",
+    "Description": "60in 3/8in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH3838S60"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH3838S72",
+    "Description": "72in 3/8in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH3838S72"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH3838S84",
+    "Description": "84in 3/8in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH3838S84"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROSLH3838S108",
+    "Description": "Slider 3/8in Hose, 3/8in Ends, SWVL, 108in with Spring",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROSLH3838S108"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROSLH3812S108",
+    "Description": "Slider 3/8in Hose, 1/2in Ends, SWVL, 108in Spring",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROSLH3812S108"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH1238S24",
+    "Description": "24in 1/2in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH1238S24"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH3838S24",
+    "Description": "24in 1/2in Hose, 3/8in SWVL/SWVL",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH3838S24"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH1238S36",
+    "Description": "36in 1/2in Hose, 3/8in Ends, SWVL/SWVL",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH1238S36"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH1238S48",
+    "Description": "48in 1/2in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH1238S48"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH1238S60",
+    "Description": "60in 1/2in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH1238S60"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH1238S72",
+    "Description": "72in 1/2in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH1238S72"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "PROBH1238S84",
+    "Description": "84in 1/2in Hose, 3/8in Ends, SWV/SWV",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROBH1238S84"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "IMXGT-5002",
+    "Description": "Air Hose Spring 13in",
+    "Manufacturer": "Propar",
+    "Notes": "Also used with Job Code 2443",
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT-5002"
+  },
+  {
+    "Section": "Air Hose Components",
+    "JobCode": 2479.0,
+    "PartNumber": "IMXGT",
+    "Description": null,
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "PROBF2-55",
+    "Description": "3/8in Tube x 3/8in Pipe Nylon Male Connector",
+    "Manufacturer": null,
+    "Notes": "Also used with Job Code 2498",
+    "MartecURL": "https://www.martecintl.com/search?q=PROBF2-55"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "PROBF2-63",
+    "Description": "1/2in Tube x 1/2in Pipe Nylon Tube Male",
+    "Manufacturer": null,
+    "Notes": "Also used with Job Code 2498",
+    "MartecURL": "https://www.martecintl.com/search?q=PROBF2-63"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "PROVA-110415",
+    "Description": "4 Port Non-ABS Crack 4 PSI",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROVA-110415"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "PROVA-110800",
+    "Description": "Spring Brake SB Priority",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROVA-110800"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "PROVA-26000",
+    "Description": "Service/Combo Valve RT-4",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROVA-26000"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "PROVA-28600",
+    "Description": "Service/Combo Valve FF-2 3/4in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROVA-28600"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "PROVA-28601",
+    "Description": "FF-2 1/2in Port Service/Combo",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROVA-28601"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "SEA110800",
+    "Description": "Enhanced Spring Brake 3/8in Port",
+    "Manufacturer": "Sealco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SEA110800"
+  },
+  {
+    "Section": "Service Combination Relay Valve",
+    "JobCode": 2490.0,
+    "PartNumber": "TRA31402",
+    "Description": "Hose Repair Kit 3/8in ID, 2 x 3/8in NPTF Fittings",
+    "Manufacturer": "Triangle",
+    "Notes": "Also used with Job Code 2498",
+    "MartecURL": "https://www.martecintl.com/search?q=TRA31402"
+  },
+  {
+    "Section": "Brake Cam Bushing and Seal",
+    "JobCode": 2424.0,
+    "PartNumber": "FRUACF4024-900",
+    "Description": "S Cam Bracket Retainer Kit",
+    "Manufacturer": "Fruehauf",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=FRUACF4024-900"
+  },
+  {
+    "Section": "Brake Cam Bushing and Seal",
+    "JobCode": 2424.0,
+    "PartNumber": "HOL51830024",
+    "Description": "S Cam Kit 1-5/8",
+    "Manufacturer": "Holland",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=HOL51830024"
+  },
+  {
+    "Section": "Brake Cam Bushing and Seal",
+    "JobCode": 2424.0,
+    "PartNumber": "MTRKIT8048",
+    "Description": "S Cam Bracket Kit Press In",
+    "Manufacturer": "Meritor",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MTRKIT8048"
+  },
+  {
+    "Section": "Brake Cam Bushing and Seal",
+    "JobCode": 2424.0,
+    "PartNumber": "PROWC8696HD",
+    "Description": "S Cam Bracket",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROWC8696HD"
+  },
+  {
+    "Section": "Brake Cam Bushing and Seal",
+    "JobCode": 2424.0,
+    "PartNumber": "PROWC8714",
+    "Description": "Camshaft Support Bracket LH/RH",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROWC8714"
+  },
+  {
+    "Section": "Brake Cam Bushing and Seal",
+    "JobCode": 2424.0,
+    "PartNumber": "PROWC8827",
+    "Description": "S Cam Washer 1-17/64in, 1-7/8in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROWC8827"
+  },
+  {
+    "Section": "Brake Cam Bushing and Seal",
+    "JobCode": 2424.0,
+    "PartNumber": "PROWCR1442HD",
+    "Description": "S Bracket Kit Meritor with Bolt On",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROWCR1442HD"
+  },
+  {
+    "Section": "Emergency Gladhand",
+    "JobCode": 2456.0,
+    "PartNumber": "PHI12-138",
+    "Description": "Red Emergency 38 Degree Bottom Port",
+    "Manufacturer": "Phillips",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI12-138"
+  },
+  {
+    "Section": "Emergency Gladhand",
+    "JobCode": 2456.0,
+    "PartNumber": "PHI12-4908",
+    "Description": "Gladhand Red Spring Loaded",
+    "Manufacturer": "Phillips",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI12-4908"
+  },
+  {
+    "Section": "Emergency Gladhand",
+    "JobCode": 2456.0,
+    "PartNumber": "PROGH-AL02",
+    "Description": "Red Emergency Side Standard",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PROGH-AL02"
+  },
+  {
+    "Section": "Emergency Gladhand",
+    "JobCode": 2456.0,
+    "PartNumber": "SLO441103",
+    "Description": "Red Swing Away 45 Degree",
+    "Manufacturer": "Sloan",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SLO441103"
+  },
+  {
+    "Section": "Landing Leg Mounting Bracket",
+    "JobCode": 3144.0,
+    "PartNumber": "LGM-CC14",
+    "Description": "Mounting Bracket 25in Cheetah",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=LGM-CC14"
+  },
+  {
+    "Section": "Landing Leg Mounting Bracket",
+    "JobCode": 3144.0,
+    "PartNumber": "LGM-ST23",
+    "Description": "Mounting Bracket Stoughton",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=LGM-ST23"
+  },
+  {
+    "Section": "Landing Leg Mounting Bracket",
+    "JobCode": 3144.0,
+    "PartNumber": "LGM-CC27",
+    "Description": "Mounting Bracket DCLI Orange",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=LGM-CC27"
+  },
+  {
+    "Section": "Landing Leg Mounting Bracket",
+    "JobCode": 3144.0,
+    "PartNumber": "LGM-ST24",
+    "Description": "Mounting Box STO R01221280000",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=LGM-ST24"
+  },
+  {
+    "Section": "Landing Leg Mounting Bracket",
+    "JobCode": 3144.0,
+    "PartNumber": "LGM-ST26",
+    "Description": "Mounting Bracket Stoughton R01-27327-000-00",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=LGM-ST26"
+  },
+  {
+    "Section": "`",
+    "JobCode": null,
+    "PartNumber": null,
+    "Description": null,
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": null
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "SIRSB1015",
+    "Description": "Bolt Assembly 1in-14 x 6in with Locknut",
+    "Manufacturer": "Sirco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SIRSB1015"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "HUT10287-01",
+    "Description": "2 Bolt System Kit",
+    "Manufacturer": "Hutch",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=HUT10287-01"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "SIRSH1044",
+    "Description": "2 Bolt System Kit",
+    "Manufacturer": "Sirco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SIRSH1044"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "SIRSH1061",
+    "Description": "Bolt Kit Single System",
+    "Manufacturer": "Sirco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SIRSH1061"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "SIRSH1021",
+    "Description": "2 Hole Fabbed",
+    "Manufacturer": "Sirco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SIRSH1021"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "SIRSH1048",
+    "Description": "Single Bolt Fabbed",
+    "Manufacturer": "Sirco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SIRSH1048"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "HUT24820-01",
+    "Description": "54.5in AC WS Single Bolt",
+    "Manufacturer": "Hutch",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=HUT24820-01"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "SIRSB1000",
+    "Description": "Fabbed SP900 Duralite",
+    "Manufacturer": "Sirco",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=SIRSB1000"
+  },
+  {
+    "Section": "Equalizer Bushing",
+    "JobCode": 2005.0,
+    "PartNumber": "BINSP0048-PTD",
+    "Description": "With Bushing Painted Black",
+    "Manufacturer": "Binkley",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BINSP0048-PTD"
+  },
+  {
+    "Section": "Push Pin Assembly",
+    "JobCode": 5015.0,
+    "PartNumber": "TWL-PL003",
+    "Description": "Front Pin Lock Assembly LH",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=TWL-PL003"
+  },
+  {
+    "Section": "Push Pin Assembly",
+    "JobCode": 5015.0,
+    "PartNumber": "TWL-PL002",
+    "Description": "Front Pin Lock Assembly RH",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=TWL-PL002"
+  },
+  {
+    "Section": "Push Pin Assembly",
+    "JobCode": 5015.0,
+    "PartNumber": "TWL-PL004",
+    "Description": "Assembly LH Roadside",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=TWL-PL004"
+  },
+  {
+    "Section": "Push Pin Assembly",
+    "JobCode": 5015.0,
+    "PartNumber": "TWL-PL006",
+    "Description": "Assembly RH Curbside",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=TWL-PL006"
+  },
+  {
+    "Section": "Push Pin Assembly",
+    "JobCode": 5015.0,
+    "PartNumber": "TWL-PL012",
+    "Description": "Lock Round 1in Pin Left",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=TWL-PL012"
+  },
+  {
+    "Section": "Push Pin Assembly",
+    "JobCode": 5015.0,
+    "PartNumber": "TWL-PL007",
+    "Description": "Lock Round 1in Pin Right",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=TWL-PL007"
+  },
+  {
+    "Section": "7-Way Receptacle Base",
+    "JobCode": 4250.0,
+    "PartNumber": "PHI15-770",
+    "Description": "Adapter Plate Powder Coated 10GA Steel",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-770"
+  },
+  {
+    "Section": "7-Way Receptacle Base",
+    "JobCode": 4250.0,
+    "PartNumber": "PHI15-740",
+    "Description": "Socket Boot",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-740"
+  },
+  {
+    "Section": "7-Way Receptacle Base",
+    "JobCode": 4250.0,
+    "PartNumber": "PHI15-769",
+    "Description": "Nose Box Kit with Gasket 1-7/8in",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-769"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI15-720",
+    "Description": "Socket 7-Way Split Pin 2 Hole Mount Die-Cast",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-720"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI16-722",
+    "Description": "Socket STA Dry Nylon 2 Hole Split Pin Ring",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI16-722"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI15-730",
+    "Description": "Socket 7-Way Die-Cast Split Pin 4 Pole Style",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-730"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI15-732",
+    "Description": "Socket 7-Way Die-Cast Solid Brass Pins 4 Pole Style",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-732"
+  },
+  {
+    "Section": "7-Way Receptacle With Breaker",
+    "JobCode": 4253.0,
+    "PartNumber": "PHI15-760",
+    "Description": "Large Socket with Breaker STA-DRY",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-760"
+  },
+  {
+    "Section": "Mudflap",
+    "JobCode": 3403.0,
+    "PartNumber": "IMXGT-2424PSB",
+    "Description": "24 x 24 Poly Standard Black 3/16in",
+    "Manufacturer": "Propar",
+    "Notes": "Also used with Job Code 3405",
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT-2424PSB"
+  },
+  {
+    "Section": "Mudflap",
+    "JobCode": 3403.0,
+    "PartNumber": "IMXGT-2430PSB",
+    "Description": "24 x 30 Poly Standard Black 3/16in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT-2430PSB"
+  },
+  {
+    "Section": "Mudflap",
+    "JobCode": 3403.0,
+    "PartNumber": "IMXGT-2432PSB",
+    "Description": "24 x 32 Poly Standard Black 3/16in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT-2432PSB"
+  },
+  {
+    "Section": "Mudflap",
+    "JobCode": 3403.0,
+    "PartNumber": "IMXGT-2436PSB",
+    "Description": "24 x 36 Poly Standard Black 3/16in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT-2436PSB"
+  },
+  {
+    "Section": "Mudflap",
+    "JobCode": 3403.0,
+    "PartNumber": "IMXGT-2440PSB",
+    "Description": "24 x 40 Poly Standard Black 3/16in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT-2440PSB"
+  },
+  {
+    "Section": "Mudflap",
+    "JobCode": 3403.0,
+    "PartNumber": "IMXGT-2460PSB",
+    "Description": "24 x 60 Poly Standard Black 3/16in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=IMXGT-2460PSB"
+  },
+  {
+    "Section": "Mudflap Bracket",
+    "JobCode": 3405.0,
+    "PartNumber": "FLT033-00868",
+    "Description": "Flap Bracket Spring Loaded HD",
+    "Manufacturer": "Fleet Engineers",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=FLT033-00868"
+  },
+  {
+    "Section": "Mudflap Bracket",
+    "JobCode": 3405.0,
+    "PartNumber": "MUD-CC05",
+    "Description": "Bracket Cheetah",
+    "Manufacturer": "Propar",
+    "Notes": "No photo available",
+    "MartecURL": "https://www.martecintl.com/search?q=MUD-CC05"
+  },
+  {
+    "Section": "Mudflap Bracket",
+    "JobCode": 3405.0,
+    "PartNumber": "3405",
+    "Description": "MudflapBracket",
+    "Manufacturer": null,
+    "Notes": "83, 0000",
+    "MartecURL": "https://www.martecintl.com/search?q=3405"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC01",
+    "Description": "DCLI Orange Bolt-On Bolted Assembly",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC01"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC11",
+    "Description": "Cheetah Kit",
+    "Manufacturer": null,
+    "Notes": "No photo available",
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC11"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC12",
+    "Description": "Chassis Assembly Without Brackets",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC12"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC02",
+    "Description": "Assembly C-Channel Stoughton style",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC02"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC10",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC10"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC06",
+    "Description": "Assembly Stoughton Type",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC06"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST41",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST41"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC14",
+    "Description": "Assembly Complete Stoughton",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC14"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-CC08",
+    "Description": "Assembly CIMC Chassis",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC08"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST40",
+    "Description": "Assembly Complete Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST40"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST38",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST38"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST37",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST37"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST01",
+    "Description": "Assembly Complete Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST01"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST09",
+    "Description": "Assembly Complete Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST09"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST36",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST36"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST35",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST35"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST34",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST34"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST33",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST33"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST02",
+    "Description": "Assembly Complete Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST02"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST08",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST08"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST07",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST07"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST06",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST06"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST05",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST05"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST04",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST04"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST03",
+    "Description": "Complete Assembly Complete",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST03"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal",
+    "JobCode": 3355.0,
+    "PartNumber": "BMP-ST10",
+    "Description": "Tube STO R28-03560-001-00",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST10"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal",
+    "JobCode": 3355.0,
+    "PartNumber": "BMP-ST39",
+    "Description": "Step STOUGHTON R28-03584-000-00",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST39"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal",
+    "JobCode": 3355.0,
+    "PartNumber": "BMP-ST12",
+    "Description": "Tube STO R28-03560-002-00",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST12"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal",
+    "JobCode": 3355.0,
+    "PartNumber": "BMP-ST11",
+    "Description": "Tube STO R28-03560-003-00",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST11"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal",
+    "JobCode": 3355.0,
+    "PartNumber": "BMP-ST31",
+    "Description": "Tube STO R28-03560-005-00",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST31"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal Bolt-On",
+    "JobCode": 3358.0,
+    "PartNumber": "BMP-CC07",
+    "Description": "Bumper Tube CIMC Chassis",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC07"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal Bolt-On",
+    "JobCode": 3358.0,
+    "PartNumber": "BMP-CC15",
+    "Description": "Tube CIMC Black Chassis Norfolk",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC15"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal Bolt-On",
+    "JobCode": 3358.0,
+    "PartNumber": "BMP-CC13",
+    "Description": "Tube CIMC Chassis",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC13"
+  },
+  {
+    "Section": "Under-Ride Guard Upright Bolt-On",
+    "JobCode": 3359.0,
+    "PartNumber": "BMP-CC02B",
+    "Description": "CIMC Bracket Left Side Black",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC02B"
+  },
+  {
+    "Section": "Under-Ride Guard Upright Bolt-On",
+    "JobCode": 3359.0,
+    "PartNumber": "BMP-CC03B",
+    "Description": "CIMC Bracket Right Side Black",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC03B"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM818R-7",
+    "Description": "AMP Red 4in Peterson 7 Diode",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM818R-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM824R-7",
+    "Description": "PL3 Red 4in Peterson 7 Diode",
+    "Manufacturer": "Peterson",
+    "Notes": "PL3 Connector",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM824R-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM818Y-7",
+    "Description": "AMP Yellow 4in Peterson 7 Diode",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM818Y-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM824Y-7",
+    "Description": "PL3 Yellow 4in Peterson 7 Diode",
+    "Manufacturer": "Peterson",
+    "Notes": "PL3 Connector",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM824Y-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM818W-7",
+    "Description": "AMP White 4in Peterson 7 Diode",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM818W-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM824W-7",
+    "Description": "PL3 White 4in Peterson 7 Diode",
+    "Manufacturer": "Peterson",
+    "Notes": "PL3 Connector",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM824W-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM815R-7",
+    "Description": "AMP Red 4in Peterson 7 Diode Grommet Mount",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM815R-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM815Y-7",
+    "Description": "AMP Yellow 4in Peterson 7 Diode Grommet Mount",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM815Y-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM815W-7",
+    "Description": "AMP White 4in Peterson 7 Diode Grommet Mount",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM815W-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM816R-7",
+    "Description": "AMP Red 4in Peterson 7 Diode Flange Mount",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM816R-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM816Y-7",
+    "Description": "AMP Yellow 4in Peterson 7 Diode Flange Mount",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM816Y-7"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "PETM816W-7",
+    "Description": "AMP White 4in Peterson 7 Diode Flange Mount",
+    "Manufacturer": "Peterson",
+    "Notes": "Connector PETB817-49",
+    "MartecURL": "https://www.martecintl.com/search?q=PETM816W-7"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI16-720",
+    "Description": "Socket STA Dry 2 Hole Split Pin Screw Type",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI16-720"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI16-724",
+    "Description": "Socket STA Dry Nylon 2 Hole Split Pin Bullet Type",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI16-724"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI15-730",
+    "Description": "Plug Connector Die Cast with Spring Guard",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-730"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI15-762",
+    "Description": "Socket Die Cast Extended Bar 20A",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-762"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI15-763",
+    "Description": "Socket Die Cast Extended Bar 30A",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-763"
+  },
+  {
+    "Section": "7-Way Receptacle",
+    "JobCode": 4251.0,
+    "PartNumber": "PHI15-796",
+    "Description": "Lid Spring and Pin Kit for 15-762",
+    "Manufacturer": "Phillips Industries",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PHI15-796"
+  },
+  {
+    "Section": "Mudflap",
+    "JobCode": 3403.0,
+    "PartNumber": "SIRMFBK",
+    "Description": "Bolt Kit 3/8in Carbon Zinc 4 Bag",
+    "Manufacturer": "Sirco",
+    "Notes": "Also used with Job Code 3405",
+    "MartecURL": "https://www.martecintl.com/search?q=SIRMFBK"
+  },
+  {
+    "Section": "Mudflap Bracket",
+    "JobCode": 3405.0,
+    "PartNumber": "MUD-ST01",
+    "Description": "Bolt-On Bracket 3/16in x 2in x 3in x 100-1/2in",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MUD-ST01"
+  },
+  {
+    "Section": "Mudflap Bracket",
+    "JobCode": 3405.0,
+    "PartNumber": "MUD-UN01",
+    "Description": "27.5in Angle 10 Gauge",
+    "Manufacturer": "Propar",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MUD-UN01"
+  },
+  {
+    "Section": "Mudflap Bracket",
+    "JobCode": 3405.0,
+    "PartNumber": "MUD-UN02",
+    "Description": "Retaining Strap For Bracket",
+    "Manufacturer": "Propar",
+    "Notes": "Also used with Job Code 3407",
+    "MartecURL": "https://www.martecintl.com/search?q=MUD-UN02"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-HY02",
+    "Description": "Hyundai Bolt-On Kit 94in with Diagonal Brace",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-HY02"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-HY06",
+    "Description": "Hyundai Bolt-On Kit 94in",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-HY06"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-HY10",
+    "Description": "DCLI Bumper Assembly",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-HY10"
+  },
+  {
+    "Section": "Under-Ride Guard Assembly",
+    "JobCode": 3350.0,
+    "PartNumber": "BMP-ST12",
+    "Description": "Stoughton ICC Complete Bumper Assembly",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST12"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal",
+    "JobCode": 3355.0,
+    "PartNumber": "BMP-UN03V",
+    "Description": "4x4x94 Pooched 18-36-18 with Label",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-UN03V"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal",
+    "JobCode": 3355.0,
+    "PartNumber": "BMP-UN04",
+    "Description": "95in Pooched Tube 16-42-16 Weld-On with Label",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-UN04"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal Bolt-On",
+    "JobCode": 3358.0,
+    "PartNumber": "BMP-CC18",
+    "Description": "DCLI Tube CIMC Orange Bolt-On",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC18"
+  },
+  {
+    "Section": "Under-Ride Guard Horizontal Bolt-On",
+    "JobCode": 3358.0,
+    "PartNumber": "BMP-ST32",
+    "Description": "Step STO Rear Impact Guard R28-03581-000-00",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST32"
+  },
+  {
+    "Section": "Under-Ride Guard Upright Bolt-On",
+    "JobCode": 3359.0,
+    "PartNumber": "BMP-CC17",
+    "Description": "Upright Black Bolt-On for BMP-CC15",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC17"
+  },
+  {
+    "Section": "Under-Ride Guard Upright Bolt-On",
+    "JobCode": 3359.0,
+    "PartNumber": "BMP-CC19",
+    "Description": "DCLI CIMC Upright Orange Bolt-On",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-CC19"
+  },
+  {
+    "Section": "Under-Ride Guard Upright Bolt-On",
+    "JobCode": 3359.0,
+    "PartNumber": "BMP-ST51",
+    "Description": "Bumper Upright Stoughton",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=BMP-ST51"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4147.0,
+    "PartNumber": "OPTMCL11AKB",
+    "Description": "3/4in LED Amber with Grommet",
+    "Manufacturer": "Optronics",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=OPTMCL11AKB"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4147.0,
+    "PartNumber": "OPTMCL11RKB",
+    "Description": "3/4in LED Red with Grommet",
+    "Manufacturer": "Optronics",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=OPTMCL11RKB"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4162.0,
+    "PartNumber": "PETB176-15",
+    "Description": "Penny Light Adapter Plate 2in Mounting Adapter",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETB176-15"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4162.0,
+    "PartNumber": "PETB176-17",
+    "Description": "Adapter Plate Black 2.5in",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETB176-17"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 2508.0,
+    "PartNumber": "OPTMCL11AKB",
+    "Description": "3/4in LED Amber with Grommet",
+    "Manufacturer": "Optronics",
+    "Notes": "ABS Indicator",
+    "MartecURL": "https://www.martecintl.com/search?q=OPTMCL11AKB"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 2508.0,
+    "PartNumber": "OPTMCL505ABSB",
+    "Description": "2in LED ABS Light",
+    "Manufacturer": "Optronics",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=OPTMCL505ABSB"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "OPTLPL31CB",
+    "Description": "Clear LED 2 Diode Mini",
+    "Manufacturer": "Optronics",
+    "Notes": "License Plate Light",
+    "MartecURL": "https://www.martecintl.com/search?q=OPTLPL31CB"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "PETM296C",
+    "Description": "LED License Light",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETM296C"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "PETM290",
+    "Description": "LED 1 Diode Clear Mount on 2in Centers",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETM290"
+  },
+  {
+    "Section": "NS Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "PETM291C-AMP",
+    "Description": "LED License Light with AMP Shroud 0.75in",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETM291C-AMP"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4158.0,
+    "PartNumber": "OPTSTL003RFHWB",
+    "Description": "One Diode 4in Round Hardwire",
+    "Manufacturer": "Optronics",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=OPTSTL003RFHWB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4147.0,
+    "PartNumber": "MCL001RXHWB",
+    "Description": "2in LED Red Hardwire",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MCL001RXHWB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4147.0,
+    "PartNumber": "MCL001AXHWB",
+    "Description": "2in LED Yellow Hardwire",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MCL001AXHWB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4147.0,
+    "PartNumber": "MCL002RXHWB",
+    "Description": "2.5in LED Red Hardwire",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MCL002RXHWB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4147.0,
+    "PartNumber": "MCL002AXHWB",
+    "Description": "2.5in LED Yellow Hardwire",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MCL002AXHWB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 2508.0,
+    "PartNumber": "MCL001AXHWB",
+    "Description": "2in LED Yellow Hardwire ABS Indicator",
+    "Manufacturer": null,
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=MCL001AXHWB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 2508.0,
+    "PartNumber": "OPTMCL505ABSB",
+    "Description": "2in LED ABS Light",
+    "Manufacturer": "Optronics",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=OPTMCL505ABSB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 2506.0,
+    "PartNumber": "OPTMC505ABSB",
+    "Description": "2in Incandescent ABS Light",
+    "Manufacturer": "Optronics",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=OPTMC505ABSB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "OPTLPL31CB",
+    "Description": "Clear LED 2 Diode Mini",
+    "Manufacturer": "Optronics",
+    "Notes": "License Plate Light",
+    "MartecURL": "https://www.martecintl.com/search?q=OPTLPL31CB"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "PETM296C",
+    "Description": "LED License Light",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETM296C"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "PETM290",
+    "Description": "LED 1 Diode Clear Mount on 2in Centers",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETM290"
+  },
+  {
+    "Section": "DCLI Lighting",
+    "JobCode": 4148.0,
+    "PartNumber": "PETM291C-AMP",
+    "Description": "LED License Light with AMP Shroud 0.75in",
+    "Manufacturer": "Peterson",
+    "Notes": null,
+    "MartecURL": "https://www.martecintl.com/search?q=PETM291C-AMP"
+  }
+]
